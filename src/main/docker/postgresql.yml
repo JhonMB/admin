@@ -1,0 +1,11 @@
+version: '2'
+services:
+  admin-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/admin/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
